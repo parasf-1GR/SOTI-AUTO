@@ -7,7 +7,7 @@
 #>
 
 param(
-    [string]$BaseUrl    = "https://a0024753.mobicontrol.cloud/MobiControl/api",
+    [string]$BaseUrl    = "https://s116505.mobicontrolcloud.com/MobiControl/api",
     [Parameter(Mandatory)] [string]$DeviceName,          # device name as shown in the MobiControl console
     [string]$Action     = "LogOut"
 )
