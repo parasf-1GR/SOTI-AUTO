@@ -1,4 +1,4 @@
-using namespace System.Net
+﻿using namespace System.Net
 
 <#
   SharedDeviceLogout - Azure Function (PowerShell, HTTP trigger)
@@ -42,7 +42,7 @@ foreach ($name in 'MC_BASE_URL','MC_CLIENT_ID','MC_CLIENT_SECRET','MC_USERNAME',
 }
 
 $base     = $env:MC_BASE_URL.TrimEnd('/')
-$action   = if ($env:MC_LOGOUT_ACTION) { $env:MC_LOGOUT_ACTION } else { 'SharedDeviceLogout' }
+$action   = if ($env:MC_LOGOUT_ACTION) { $env:MC_LOGOUT_ACTION } else { 'LogOut' }
 $idInPath = [uri]::EscapeDataString($deviceId)
 
 # --- 2. Get a MobiControl token (password grant, Basic clientId:secret) ---

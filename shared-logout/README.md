@@ -1,4 +1,4 @@
-# Shared Device "Log out" app (POC)
+﻿# Shared Device "Log out" app (POC)
 
 A one-button Android app that ends the MobiControl Shared Device session without
 users ever opening the MobiControl agent. Built for the S24 FE DeX POC, where the
@@ -7,7 +7,7 @@ logged-in group has no lockdown.
 ```
 [Log out app] --HTTPS + function key--> [Azure Function] --REST API--> [MobiControl]
                                                          POST /devices/{id}/actions
-                                                         { "Action": "SharedDeviceLogout" }
+                                                         { "Action": "LogOut" }
 ```
 
 MobiControl credentials live only in the Function, never on the device. The device
@@ -15,7 +15,7 @@ only holds the Function URL and a Function key, delivered via managed configurat
 
 ## 1. Confirm the API action name first
 Search your Swagger spec (New_MCAPI.json) for the device actions body and confirm the
-shared-device logout action value. The default here is `SharedDeviceLogout`; if yours
+shared-device logout action value. The default here is `LogOut`; if yours
 differs, set the `MC_LOGOUT_ACTION` app setting rather than editing code.
 
 ## 2. Deploy the middleware
