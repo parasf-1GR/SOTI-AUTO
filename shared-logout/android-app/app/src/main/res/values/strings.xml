@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Log out</string>
+    <string name="title">Shared device</string>
+    <string name="logout">Log out</string>
+    <string name="confirm_title">Log out?</string>
+    <string name="confirm_msg">You will be signed out of this device and it will return to the login screen.</string>
+    <string name="cancel">Cancel</string>
+    <string name="logging_out">Logging out…</string>
+    <string name="success">Logout requested. The device will return to the login screen shortly.</string>
+    <string name="failed_code">Logout failed (HTTP %1$d). Please contact your administrator.</string>
+    <string name="failed_network">Could not reach the logout service. Check network and try again.</string>
+    <string name="not_configured">Not configured. Ask your administrator to apply the app configuration.</string>
+    <string name="r_endpoint">Logout service URL</string>
+    <string name="r_endpoint_desc">HTTPS URL of the logout middleware function</string>
+    <string name="r_key">Function key</string>
+    <string name="r_key_desc">Key sent as x-functions-key to the middleware</string>
+    <string name="r_device">MobiControl device ID</string>
+    <string name="r_device_desc">Use the MobiControl device ID macro so each device sends its own ID</string>
+</resources>

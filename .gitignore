@@ -1,0 +1,14 @@
+# Android Studio / Gradle build output
+.gradle/
+build/
+.idea/
+local.properties
+*.apk
+*.aab
+
+# Signing keys
+*.jks
+*.keystore
+
+# Azure Functions local secrets
+local.settings.json

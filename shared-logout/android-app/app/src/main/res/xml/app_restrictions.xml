@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction
+        android:key="endpoint_url"
+        android:title="@string/r_endpoint"
+        android:description="@string/r_endpoint_desc"
+        android:restrictionType="string"
+        android:defaultValue="" />
+    <restriction
+        android:key="api_key"
+        android:title="@string/r_key"
+        android:description="@string/r_key_desc"
+        android:restrictionType="string"
+        android:defaultValue="" />
+    <restriction
+        android:key="device_id"
+        android:title="@string/r_device"
+        android:description="@string/r_device_desc"
+        android:restrictionType="string"
+        android:defaultValue="" />
+</restrictions>
